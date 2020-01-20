@@ -10,4 +10,13 @@ class Post extends Model
     use SoftDeletes;
     
     protected $fillable = ['title','description','content','image','published_at'];
+
+    /** 
+    * Delete post image from storage
+    * @return void
+    */
+    public function deleteImages()
+    {
+        Storage::delete($this->image);
+    }
 }
