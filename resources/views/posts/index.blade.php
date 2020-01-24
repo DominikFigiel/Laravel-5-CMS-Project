@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="d-flex justify-content-end mb-2">
-    <a href="{{ route('posts.create') }}" class="btn btn-success float-right">Add post</a>
+    <a href="{{ route('posts.create') }}" class="btn btn-success btn-block float-right">Add post</a>
 </div>
 
 <div class="card card-default">
@@ -15,6 +15,7 @@
                 <thead>
                     <th>Image</th>
                     <th>Title</th>
+                    <th>Category</th>
                     <th></th>
                     <th></th>
                 </thead>
@@ -26,6 +27,11 @@
                             </td>
                             <td>{{$post->title}}
                                 {{ $post->title }}
+                            </td>
+                            <td>
+                                <a href="{{ route('categories.edit', $post->category->id) }}">
+                                    {{ $post->category->name }}
+                                </a>
                             </td>
                             @if ($post->trashed())
                                 <td>

@@ -84,7 +84,7 @@ class CategoriesController extends Controller
 
         session()->flash('success', 'Category updated successfully.');
 
-        return redirect(route('categories.index '));
+        return redirect(route('categories.index'));
 
     }
 
