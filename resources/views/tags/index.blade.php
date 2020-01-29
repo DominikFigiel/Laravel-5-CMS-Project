@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="d-flex justify-content-end mb-2">
-    <a href="/tags/create" class="btn btn-success float-right">Add tag</a>
+    <a href="/tags/create" class="btn btn-success btn-block float-right">Add tag</a>
 </div>
 <div class="card card-default">
     <div class="card-header">
@@ -23,8 +23,7 @@
                                 {{ $tag->name }}
                             </td>
                             <td>
-                                {{-- {{ $tag->posts->count() }} --}}
-                                0
+                                {{ $tag->posts->count() }}
                             </td>
                             <td>
                                 <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-info btn-sm">
