@@ -25,7 +25,7 @@
                             <td>
                                 <img src="{{asset('storage/'. $post->image)}}" width="60px" height="60px" alt="">
                             </td>
-                            <td>{{$post->title}}
+                            <td>
                                 {{ $post->title }}
                             </td>
                             <td>
