@@ -27,7 +27,10 @@
                             </td>
                             <td>
                                 @if(!$user->isAdmin())
-                                    <button class="btn btn-success button-sm">Make Admin</button>
+                                    <form action="{{ route('users.make-admin', $user->id) }}" method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn btn-success button-sm">Make Admin</button>
+                                    </form>
                                 @endif
                             </td>
                         </tr>
