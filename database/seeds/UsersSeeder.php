@@ -12,16 +12,6 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::where('email', 'admin@admin')->first();
-
-        if (!$user) {
-            User::create([
-                'name' => 'admin@admin',
-                'email' => 'admin@admin',
-                'password' => Hash::make('password'), // password
-            ]);
-        }
-
         factory(App\User::class, 5)->create();
     }
 
