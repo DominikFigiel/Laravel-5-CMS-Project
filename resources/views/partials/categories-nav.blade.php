@@ -1,4 +1,4 @@
-@if($categories)
+@if($categories->count() > 0)
     <li class="nav-item">
         <a class="nav-link" href="#">Categories <span class="arrow"></span></a>
         <nav class="nav">
@@ -9,4 +9,13 @@
             @endforeach
         </nav>
     </li>
+@else
+<li class="nav-item">
+    <a class="nav-link" href="#">Categories <span class="arrow"></span></a>
+    <nav class="nav">
+        <a class="nav-link" href="#">
+            No Categories
+        </a>
+    </nav>
+</li>
 @endif

@@ -5,7 +5,9 @@
               <form class="input-group" action="" method="GET">
                 <input type="text" class="form-control" name="search" placeholder="Search">
                 <div class="input-group-addon">
-                  <span class="input-group-text"><i class="fa fa-search"></i></span>
+                  <button type="submit" class="btn btn-default">
+                    <i class="fa fa-search"></i>
+                  </button>
                 </div>
               </form>
 

@@ -46,8 +46,10 @@
           </ul>
         </section>
 
-        <a class="btn btn-xs btn-round btn-success" href="{{ route('login') }}">Login</a>
-
+        @if (auth()->user())
+          <a class="btn btn-xs btn-round btn-success" href="{{ route('login') }}">Admin Panel</a>
+        @endif
+        
       </div>
     </nav><!-- /.navbar -->
 
