@@ -12,7 +12,7 @@ class PostsController extends Controller
 {
     public function show(Post $post)
     {
-        return view('blog.show')->with('post', $post);
+        return view('blog.show')->with('post', $post)->with('categories', Category::all());
     }
 
     public function category(Category $category)
