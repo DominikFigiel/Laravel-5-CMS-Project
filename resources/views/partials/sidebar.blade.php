@@ -2,7 +2,7 @@
             <div class="sidebar px-4 py-md-0">
 
               <h6 class="sidebar-title">Search</h6>
-              <form class="input-group" action="{{ route('welcome') }}" method="GET">
+              <form class="input-group" action="" method="GET">
                 <input type="text" class="form-control" name="search" placeholder="Search">
                 <div class="input-group-addon">
                   <span class="input-group-text"><i class="fa fa-search"></i></span>
@@ -55,9 +55,6 @@
               </div>
 
               <hr>
-
-              <!-- <h6 class="sidebar-title">About</h6>
-              <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>-->
 
             </div>
           </div>
