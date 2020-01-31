@@ -13,7 +13,7 @@ class Post extends Model
 {
     use SoftDeletes;
     
-    protected $fillable = ['title','description','content','image','published_at','category_id'];
+    protected $fillable = ['title','description','content','image','published_at','category_id', 'user_id'];
 
     /** 
     * Delete post image from storage
